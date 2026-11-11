@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Courses - FlipStuck</title>
+  <meta name="description" content="Find the right course for your next step. Explore top-rated courses across Web Development, Design, Data Science, Excel, and more.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glows (Strictly Viewport-Clipped) -->
+  <div class="ambient-glows" aria-hidden="true">
+    <div class="glow-spot glow-spot-lime" style="top: 80px; left: -100px; width: 450px; height: 450px;"></div>
+    <div class="glow-spot glow-spot-lime" style="top: 300px; right: -120px; width: 500px; height: 500px;"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" aria-label="FlipStuck Home">
+        <img src="Assets/logo-flip.svg" alt="FlipStuck" class="logo-img">
+      </a>
+
+      <input type="checkbox" id="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu">
+        <a href="courses.html" class="nav-link active">Courses</a>
+        <a href="index.html#categories" class="nav-link">Categories</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumb-wrap">
+    <div class="container">
+      <div class="breadcrumb-list">
+        <a href="index.html">Home</a>
+        <span>&gt;</span>
+        <span class="breadcrumb-active">Explore Courses</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore Hero & Search Bar -->
+  <section class="explore-hero">
+    <div class="container">
+      <h1 class="explore-title">
+        Find the right course for<br>
+        your <span class="italic-serif">next step.</span>
+      </h1>
+
+      <form action="courses.html" method="get" class="search-box-wrap">
+        <input type="text" name="q" placeholder="Search courses, skills, or topics..." class="search-input" aria-label="Search courses">
+        <button type="submit" class="search-btn" aria-label="Submit search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Main Explore Content Layout -->
+  <section class="container explore-layout">
+    <!-- Left Sidebar Filters -->
+    <aside class="filters-sidebar">
+      <div class="filter-group">
+        <h3 class="filter-title">Categories</h3>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox" checked>
+          <span>Web Development</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Graphic Design</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Data Science</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Computer Basics</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Video Editing</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Beauty &amp; Lifestyle</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Digital Marketing</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Music</span>
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <h3 class="filter-title">Level</h3>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Beginner</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Intermediate</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Advanced</span>
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <h3 class="filter-title">Price</h3>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>Free</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox" checked>
+          <span>Paid</span>
+        </label>
+      </div>
+
+      <div class="filter-group">
+        <h3 class="filter-title">Rating</h3>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox" checked>
+          <span>4.5 &amp; up</span>
+        </label>
+        <label class="filter-option">
+          <input type="checkbox" class="filter-checkbox">
+          <span>4.0 &amp; up</span>
+        </label>
+      </div>
+    </aside>
+
+    <!-- Right Courses Section -->
+    <main>
+      <div class="explore-header-row">
+        <div>
+          <h2 style="font-size: 1.75rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 4px;">Explore all courses</h2>
+          <p style="font-size: 0.95rem; color: var(--color-text-muted);">Discover courses to help you learn, grow, and succeed.</p>
+        </div>
+
+        <div class="sort-select-wrap">
+          <span>Sort by:</span>
+          <select class="sort-select" aria-label="Sort courses">
+            <option>Most Popular</option>
+            <option>Highest Rated</option>
+            <option>Newest</option>
+            <option>Price: Low to High</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="courses-grid" style="margin-top: 20px;">
+        <!-- Card 1 -->
+        <a href="excel-course.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-bestseller">Best Seller</span>
+            <img src="Assets/courses/course-web-dev.png" alt="Complete Web Development Bootcamp" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Complete Web Development Bootcamp</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-rohit.png" alt="Rohit Sharma" class="instructor-avatar">
+              <span class="instructor-name">Rohit Sharma</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.8</span>
+                <span class="rating-count">(2.4K)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹699</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="excel-course.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-trending">Trending</span>
+            <img src="Assets/courses/course-ui-ux.png" alt="UI/UX Design Mastery Course" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">UI/UX Design Mastery Course</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-priya.png" alt="Priya Sharma" class="instructor-avatar">
+              <span class="instructor-name">Priya Sharma</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.7</span>
+                <span class="rating-count">(1.8K)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹599</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="excel-course.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-popular">Popular</span>
+            <img src="Assets/courses/course-digital-marketing.png" alt="Digital Marketing Complete Course" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Digital Marketing Complete Course</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-aman.png" alt="Aman Verma" class="instructor-avatar">
+              <span class="instructor-name">Aman Verma</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.6</span>
+                <span class="rating-count">(3.1K)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹499</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="excel-course.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-popular">Popular</span>
+            <img src="Assets/courses/course-guitar.png" alt="Guitar Lessons for Beginners" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Guitar Lessons for Beginners</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-sneha.png" alt="Sneha Kapoor" class="instructor-avatar">
+              <span class="instructor-name">Sneha Kapoor</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.9</span>
+                <span class="rating-count">(1.2K)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹399</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="excel-course.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-bestseller">Best Seller</span>
+            <img src="Assets/courses/course-data-science.png" alt="Data Science Fundamentals" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Data Science Fundamentals</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-karan.png" alt="Karan Mehta" class="instructor-avatar">
+              <span class="instructor-name">Karan Mehta</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.7</span>
+                <span class="rating-count">(2.1K)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹799</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="excel-course.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-trending">Trending</span>
+            <img src="Assets/courses/course-video-editing.png" alt="Video Editing Essentials" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Video Editing Essentials</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-neha.png" alt="Neha Das" class="instructor-avatar">
+              <span class="instructor-name">Neha Das</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.6</span>
+                <span class="rating-count">(946)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹449</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 7 -->
+        <a href="excel-course.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-popular">Popular</span>
+            <img src="Assets/courses/course-graphic-design.png" alt="Graphic Design Basics" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Graphic Design Basics</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-arjun.png" alt="Arjun Singh" class="instructor-avatar">
+              <span class="instructor-name">Arjun Singh</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.4</span>
+                <span class="rating-count">(782)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹349</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 8: Master Microsoft Excel / Excel & Computer Basics -->
+        <a href="excel-course.html" class="course-card" style="border: 2px solid var(--color-primary);">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-bestseller">Best Seller</span>
+            <img src="Assets/courses/course-excel-basics.png" alt="Excel & Computer Basics" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Excel &amp; Computer Basics</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-ananya-roy.png" alt="Ananya Roy" class="instructor-avatar">
+              <span class="instructor-name">Ananya Roy</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.6</span>
+                <span class="rating-count">(1.5K)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹299</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 9 -->
+        <a href="excel-course.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-trending">Trending</span>
+            <img src="Assets/courses/course-beauty-lifestyle.png" alt="Beauty & Lifestyle Mastery" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Beauty &amp; Lifestyle Mastery</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-isha.png" alt="Isha Malhotra" class="instructor-avatar">
+              <span class="instructor-name">Isha Malhotra</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.5</span>
+                <span class="rating-count">(673)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹499</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination-wrap">
+        <a href="#" class="page-btn" aria-label="Previous page">←</a>
+        <a href="#" class="page-btn active">1</a>
+        <a href="#" class="page-btn">2</a>
+        <a href="#" class="page-btn">3</a>
+        <span style="color: var(--color-text-light); padding: 0 4px;">...</span>
+        <a href="#" class="page-btn">8</a>
+        <a href="#" class="page-btn" aria-label="Next page">→</a>
+      </div>
+    </main>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="Assets/logo-flip.svg" alt="FlipStuck" class="footer-logo">
+          <p class="footer-tagline">
+            Your all-in-one learning platform to explore, learn and grow without limits.
+          </p>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>hello@flipstuck.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+91 00000 00000</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="X / Twitter">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Courses</h4>
+          <ul class="footer-links-list">
+            <li><a href="courses.html">All Courses</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Career Paths</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="excel-course.html#faq">FAQs</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Asian Landscape Art Panorama -->
+    <div class="footer-landscape-wrap">
+      <img src="Assets/footer-bg.jpg" alt="Artistic Landscape" class="footer-landscape-img">
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div>© 2025 FlipStuck. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms of Service</a>
+          <span>|</span>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
