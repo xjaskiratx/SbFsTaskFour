@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlipStuck - Courses Designed for Growth, Clarity, and Transformation</title>
+  <meta name="description" content="From beginner to expert, FlipStuck provides everything you need to learn, grow, and achieve real results with top-rated courses.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glows (Strictly Viewport-Clipped) -->
+  <div class="ambient-glows" aria-hidden="true">
+    <div class="glow-spot glow-spot-lime" style="top: 100px; left: -100px; width: 450px; height: 450px;"></div>
+    <div class="glow-spot glow-spot-lime" style="top: 600px; right: -150px; width: 500px; height: 500px;"></div>
+    <div class="glow-spot glow-spot-lime" style="top: 2200px; left: -100px; width: 450px; height: 450px;"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" aria-label="FlipStuck Home">
+        <img src="Assets/logo-flip.svg" alt="FlipStuck" class="logo-img">
+      </a>
+
+      <!-- Pure CSS Mobile Toggle -->
+      <input type="checkbox" id="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu">
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span class="hero-pill-dot"></span>
+        <span>Start Learning &gt; Explore Courses &gt; Achieve Your Goals</span>
+      </div>
+
+      <h1 class="hero-title">
+        Courses designed for<br>
+        growth, clarity, and <span class="italic-serif">transformation.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        From beginner to expert, we provide everything you need to learn, grow, and achieve real results.
+      </p>
+
+      <div class="hero-actions">
+        <a href="courses.html" class="btn btn-primary btn-lg">
+          Explore Courses <span class="arrow-icon">→</span>
+        </a>
+        <a href="#reviews" class="btn btn-outline btn-lg">
+          Student Reviews <span class="arrow-icon">→</span>
+        </a>
+      </div>
+
+      <div class="hero-social-proof">
+        <span style="font-weight: 800; color: #0f172a; display: flex; align-items: center; gap: 4px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Trustpilot
+        </span>
+        <span class="trustpilot-stars">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </span>
+        <span style="color: #64748b;">4.9</span>
+      </div>
+
+      <div class="hero-image-wrap">
+        <img src="Assets/hero-image.png" alt="FlipStuck Course Showcase" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted By Bar -->
+  <section class="trusted-bar">
+    <div class="container">
+      <div class="trusted-label">Trusted by learners and teams at</div>
+      <div class="logos-grid">
+        <div class="brand-logo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.08 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+          Google
+        </div>
+        <div class="brand-logo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h11.377v11.372H0zm12.623 0H24v11.372H12.623zM0 12.623h11.377V24H0zm12.623 0H24V24H12.623z"/></svg>
+          Microsoft
+        </div>
+        <div class="brand-logo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.925 15.65c-2.35 1.7-5.75 2.6-8.75 2.6-4.15 0-7.9-1.55-10.75-4.15-.25-.2-.05-.55.25-.4 3.05 1.7 6.75 2.7 10.5 2.7 2.65 0 5.6-.55 8.3-1.7.45-.2.85.3.45.95zm1.5-1.5c-.3-.4-1.95-.2-2.7-.1-.25.05-.3-.15-.05-.3 1.35-.9 3.55-.65 3.8.35.25 1.05-1.05 3.35-2.4 4.3-.2.15-.35.05-.25-.15.45-.75 1.9-3.7 1.6-4.1z"/></svg>
+          amazon
+        </div>
+        <div class="brand-logo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.96 0H24v24H13.96V0zM0 0h10.04L0 24V0zm12.02 9.54L17.7 24h-4.32l-1.36-3.8h-4.1l2.42-6.52c.62-1.68 1.18-3.08 1.68-4.14z"/></svg>
+          Adobe
+        </div>
+        <div class="brand-logo">
+          <span style="font-weight: 800; font-size: 1.35rem; letter-spacing: -1px;">ûdemy</span>
+        </div>
+        <div class="brand-logo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.047-.326L17.86 1.97c-.466-.373-.84-.56-1.54-.514L3.62 2.39c-.28 0-.327.28-.187.466zm.84 3.733v13.53c0 .653.373.98.98 1.026l14.288-.84c.653-.046.793-.513.793-1.026V6.915c0-.56-.233-.84-.793-.793l-14.475.84c-.56.047-.793.374-.793.98z"/></svg>
+          Notion
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-card-wrap">
+        <div class="stat-item">
+          <div class="stat-icon-wrap" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-number">250,000+</div>
+            <div class="stat-label">Happy Learners</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon-wrap" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Expert Courses</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon-wrap" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#0f172a">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-number">4.8/5</div>
+            <div class="stat-label">Average Rating</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon-wrap" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18.178 8c5.096 0 5.096 8 0 8-2.656 0-4.66-2.584-6.178-4-1.518 1.416-3.522 4-6.178 4-5.096 0-5.096-8 0-8 2.656 0 4.66 2.584 6.178 4 1.518-1.416 3.522-4 6.178-4z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-number">Lifetime</div>
+            <div class="stat-label">Access to Content</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Categories Section -->
+  <section class="section section-subtle" id="categories">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag">Explore</div>
+        <h2 class="section-title">Popular Categories</h2>
+      </div>
+
+      <div class="categories-grid">
+        <a href="courses.html?cat=web" class="category-card">
+          <img src="Assets/web-icon.jpg" alt="Web Development" class="category-icon">
+          <div class="category-name">Web Development</div>
+          <div class="category-arrow">→</div>
+        </a>
+
+        <a href="courses.html?cat=design" class="category-card">
+          <img src="Assets/design-icon.jpg" alt="Graphic Design" class="category-icon">
+          <div class="category-name">Graphic Design</div>
+          <div class="category-arrow">→</div>
+        </a>
+
+        <a href="courses.html?cat=data" class="category-card">
+          <img src="Assets/datasc-icon.jpg" alt="Data Science" class="category-icon">
+          <div class="category-name">Data Science</div>
+          <div class="category-arrow">→</div>
+        </a>
+
+        <a href="courses.html?cat=computer" class="category-card">
+          <img src="Assets/computer-icon.jpg" alt="Computer Basics" class="category-icon">
+          <div class="category-name">Computer Basics</div>
+          <div class="category-arrow">→</div>
+        </a>
+
+        <a href="courses.html?cat=video" class="category-card">
+          <img src="Assets/video-icon.jpg" alt="Video Editing" class="category-icon">
+          <div class="category-name">Video Editing</div>
+          <div class="category-arrow">→</div>
+        </a>
+
+        <a href="courses.html?cat=lifestyle" class="category-card">
+          <img src="Assets/lifestyle-icon.jpg" alt="Beauty & Lifestyle" class="category-icon">
+          <div class="category-name">Beauty &amp; Lifestyle</div>
+          <div class="category-arrow">→</div>
+        </a>
+
+        <a href="courses.html?cat=marketing" class="category-card">
+          <img src="Assets/market-icon.jpg" alt="Digital Marketing" class="category-icon">
+          <div class="category-name">Digital Marketing</div>
+          <div class="category-arrow">→</div>
+        </a>
+
+        <a href="courses.html?cat=music" class="category-card">
+          <img src="Assets/music-icon.jpg" alt="Music" class="category-icon">
+          <div class="category-name">Music</div>
+          <div class="category-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Most Popular Courses Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header-flex">
+        <div>
+          <div class="section-tag">Popular Courses</div>
+          <h2 class="section-title">Most Popular Courses</h2>
+          <p class="section-subtitle" style="margin-left: 0;">Discover our most loved and top-rated courses.</p>
+        </div>
+        <a href="courses.html" class="link-with-arrow">
+          View All Courses <span>→</span>
+        </a>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Course 1 -->
+        <a href="courses.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-bestseller">Best Seller</span>
+            <img src="Assets/courses/course-web-dev.png" alt="Complete Web Development Bootcamp" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Complete Web Development Bootcamp</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-rohit.png" alt="Rohit Sharma" class="instructor-avatar">
+              <span class="instructor-name">Rohit Sharma</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.8</span>
+                <span class="rating-count">(2.4K)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹699</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Course 2 -->
+        <a href="courses.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-bestseller">Best Seller</span>
+            <img src="Assets/courses/course-ui-ux.png" alt="UI/UX Design Mastery Course" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">UI/UX Design Mastery Course</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-priya.png" alt="Priya Sharma" class="instructor-avatar">
+              <span class="instructor-name">Priya Sharma</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.7</span>
+                <span class="rating-count">(1.8K)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹599</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Course 3 -->
+        <a href="courses.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-trending">Trending</span>
+            <img src="Assets/courses/course-digital-marketing.png" alt="Digital Marketing Complete Course" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Digital Marketing Complete Course</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-aman.png" alt="Aman Verma" class="instructor-avatar">
+              <span class="instructor-name">Aman Verma</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.6</span>
+                <span class="rating-count">(3.1K)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹499</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Course 4 -->
+        <a href="courses.html" class="course-card">
+          <div class="course-thumb-wrap">
+            <span class="badge-tag badge-popular">Popular</span>
+            <img src="Assets/courses/course-guitar.png" alt="Guitar Lessons for Beginners" class="course-thumb">
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Guitar Lessons for Beginners</h3>
+            <div class="course-instructor">
+              <img src="Assets/avatars/avatar-sneha.png" alt="Sneha Kapoor" class="instructor-avatar">
+              <span class="instructor-name">Sneha Kapoor</span>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#0f172a"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>4.9</span>
+                <span class="rating-count">(1.2K)</span>
+              </div>
+              <div class="course-price-wrap">
+                <span>₹399</span>
+                <span class="course-price-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Feedback / Reviews Section -->
+  <section class="section section-subtle" id="reviews">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag">Student Feedback</div>
+        <h2 class="section-title">What Our Students Say</h2>
+        <p class="section-subtitle">Real stories from our happy learners.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <img src="Assets/quote.png" alt="quote" class="testimonial-quote-icon">
+          <p class="testimonial-text">
+            FlipStuck has transformed the way I learn. The courses are high quality and easy to follow.
+          </p>
+          <div class="testimonial-author">
+            <img src="Assets/avatars/avatar-priya-large.png" alt="Priya Sharma" class="author-avatar">
+            <div>
+              <div class="author-name">Priya Sharma</div>
+              <div class="author-role">Web Developer</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <img src="Assets/quote.png" alt="quote" class="testimonial-quote-icon">
+          <p class="testimonial-text">
+            The UI/UX course was amazing! I landed my dream job after completing it.
+          </p>
+          <div class="testimonial-author">
+            <img src="Assets/avatars/avatar-rohit-large.png" alt="Rohit Verma" class="author-avatar">
+            <div>
+              <div class="author-name">Rohit Verma</div>
+              <div class="author-role">UI Designer</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <img src="Assets/quote.png" alt="quote" class="testimonial-quote-icon">
+          <p class="testimonial-text">
+            Great platform with practical knowledge. Highly recommended for everyone!
+          </p>
+          <div class="testimonial-author">
+            <img src="Assets/avatars/avatar-ananya-large.png" alt="Ananya Singh" class="author-avatar">
+            <div>
+              <div class="author-name">Ananya Singh</div>
+              <div class="author-role">Digital Marketer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Best Learning Experience -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag">Why FlipStuck</div>
+        <h2 class="section-title">The Best Learning Experience</h2>
+        <p class="section-subtitle">We're committed to your success, every step of the way.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <img src="Assets/lifetime-icon.jpg" alt="Lifetime Access" class="feature-icon-img">
+          </div>
+          <h3 class="feature-title">Lifetime Access</h3>
+          <p class="feature-desc">Learn at your own pace with lifetime access to all courses.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <img src="Assets/certificate-icon.jpg" alt="Certificate" class="feature-icon-img">
+          </div>
+          <h3 class="feature-title">Certificate</h3>
+          <p class="feature-desc">Earn shareable certificates to showcase your skills and boost your profile.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <img src="Assets/support-icon.jpg" alt="Expert Support" class="feature-icon-img">
+          </div>
+          <h3 class="feature-title">Expert Support</h3>
+          <p class="feature-desc">Get help whenever you need it from our expert support team.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <img src="Assets/mobile-icon.jpg" alt="Learn Anywhere" class="feature-icon-img">
+          </div>
+          <h3 class="feature-title">Learn Anywhere</h3>
+          <p class="feature-desc">Access our courses on any device, anytime, anywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Designed for Real People Banner -->
+  <section class="container">
+    <div class="banner-growth">
+      <div class="banner-content">
+        <div class="section-tag">Learn. Grow. Succeed.</div>
+        <h2 class="banner-heading">
+          Designed for<br>real people.<br>
+          <span class="italic-serif">Built for growth.</span>
+        </h2>
+        <p class="banner-sub">Simple learning. Real impact.</p>
+
+        <div class="banner-pills">
+          <div class="growth-pill">
+            <img src="Assets/learn-icon.jpg" alt="Learn" class="growth-pill-icon">
+            <span>Learn</span>
+          </div>
+          <div class="growth-pill">
+            <img src="Assets/grow-icon.jpg" alt="Grow" class="growth-pill-icon">
+            <span>Grow</span>
+          </div>
+          <div class="growth-pill">
+            <img src="Assets/star-icon.jpg" alt="Succeed" class="growth-pill-icon">
+            <span>Succeed</span>
+          </div>
+        </div>
+
+        <a href="courses.html" class="btn btn-primary btn-lg">
+          Explore Courses <span class="arrow-icon">→</span>
+        </a>
+      </div>
+
+      <div class="banner-visual">
+        <img src="Assets/human.png" alt="Growth Human Silhouette" class="human-silhouette">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="Assets/logo-flip.svg" alt="FlipStuck" class="footer-logo">
+          <p class="footer-tagline">
+            Your all-in-one learning platform to explore, learn and grow without limits.
+          </p>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>hello@flipstuck.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+91 00000 00000</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="X / Twitter">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Courses</h4>
+          <ul class="footer-links-list">
+            <li><a href="courses.html">All Courses</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Career Paths</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="excel-course.html#faq">FAQs</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Asian Landscape Art Panorama -->
+    <div class="footer-landscape-wrap">
+      <img src="Assets/footer-bg.jpg" alt="Artistic Landscape" class="footer-landscape-img">
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div>© 2025 FlipStuck. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms of Service</a>
+          <span>|</span>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
