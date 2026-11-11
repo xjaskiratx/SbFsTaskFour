@@ -2070,6 +2070,17 @@ details[open] .accordion-content {
   background-color: #f8fcdb;
 }
 
+/* Standardized Monochrome & Lime Vector Iconography */
+.svg-icon-lime {
+  stroke: var(--color-primary);
+}
+.svg-icon-dark {
+  stroke: var(--color-text-main);
+}
+.svg-icon-muted {
+  stroke: var(--color-text-muted);
+}
+
 .check-glyph {
   color: #16a34a;
   display: inline-flex;
