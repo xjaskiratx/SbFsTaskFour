@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlipStuck - Secure Enrollment Checkout</title>
+  <meta name="description" content="Complete your enrollment securely for Master Microsoft Excel From Beginner to Advanced.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background-color: #fafbfd;">
+
+  <!-- Ambient Glows (Strictly Viewport-Clipped) -->
+  <div class="ambient-glows" aria-hidden="true">
+    <div class="glow-spot glow-spot-lime" style="top: 150px; left: -100px; width: 450px; height: 450px;"></div>
+    <div class="glow-spot glow-spot-lime" style="top: 250px; right: -100px; width: 450px; height: 450px;"></div>
+  </div>
+
+  <!-- Checkout Header -->
+  <header class="checkout-header">
+    <div class="container checkout-header-inner">
+      <a href="index.html" class="logo-link" aria-label="FlipStuck Home">
+        <img src="Assets/logo-flip.svg" alt="FlipStuck" class="logo-img">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="courses.html" class="nav-link">Courses</a>
+        <a href="index.html#categories" class="nav-link">Categories</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="secure-badge-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#365314" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        <span>100% secure checkout</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Checkout Form & Order Summary Section -->
+  <main class="checkout-section">
+    <div class="container checkout-layout">
+      <!-- Left Column: Enrollment Form -->
+      <section class="checkout-card">
+        <div class="section-tag">Secure Enrollment</div>
+        <h1 class="checkout-heading">
+          Complete your <span class="italic-serif">enrollment</span>
+        </h1>
+        <p class="checkout-subtitle">Enter your details for instant course access after payment.</p>
+
+        <form action="#" method="post" id="enrollment-form">
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="fullname" class="form-label">Full name</label>
+            <div class="input-with-icon">
+              <span class="input-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </span>
+              <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Enter your full name" required>
+            </div>
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="email" class="form-label">Email address</label>
+            <div class="input-with-icon">
+              <span class="input-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </span>
+              <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone number</label>
+            <div class="input-with-icon">
+              <span class="input-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </span>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter your phone number" required>
+            </div>
+          </div>
+
+          <!-- Have a coupon code? (Pure HTML/CSS Details) -->
+          <details class="coupon-toggle">
+            <summary class="coupon-summary">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+                <span>Have a coupon code?</span>
+              </div>
+              <span style="font-size: 0.8rem; color: #64748b;">▾</span>
+            </summary>
+            <div class="coupon-form-inner">
+              <input type="text" placeholder="Enter promo code" class="coupon-input" aria-label="Promo code">
+              <button type="button" class="btn btn-outline btn-sm">Apply</button>
+            </div>
+          </details>
+
+          <!-- Primary Submit CTA -->
+          <button type="submit" class="btn btn-primary btn-lg btn-block" style="font-size: 1.05rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <span>Proceed to secure payment</span>
+            <span class="arrow-icon">→</span>
+          </button>
+
+          <p style="text-align: center; font-size: 0.8rem; color: var(--color-text-muted); margin-top: 16px;">
+            By continuing, you agree to the course terms and authorize payment through Razorpay.
+          </p>
+        </form>
+
+        <!-- Trust Badges Grid -->
+        <div class="checkout-trust-grid">
+          <div class="trust-badge-item">
+            <div class="trust-badge-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div>
+              <div class="trust-badge-title">SSL secured</div>
+              <div class="trust-badge-sub">Your details stay encrypted</div>
+            </div>
+          </div>
+
+          <div class="trust-badge-item">
+            <div class="trust-badge-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <div>
+              <div class="trust-badge-title">Instant access</div>
+              <div class="trust-badge-sub">Start learning after payment</div>
+            </div>
+          </div>
+
+          <div class="trust-badge-item">
+            <div class="trust-badge-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            </div>
+            <div>
+              <div class="trust-badge-title">Safe payment</div>
+              <div class="trust-badge-sub">Powered by Razorpay</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Column: Course Summary Card -->
+      <aside class="order-summary-card">
+        <div class="order-course-img-wrap">
+          <span class="badge-tag badge-bestseller">Bestseller course</span>
+          <img src="Assets/courses/course-excel-hero.png" alt="Master Microsoft Excel From Beginner to Advanced" class="order-course-img">
+        </div>
+
+        <div class="section-tag" style="margin-bottom: 8px;">Your Course</div>
+        <h2 class="order-course-title">
+          Master Microsoft Excel From Beginner to Advanced
+        </h2>
+
+        <div class="order-price-breakdown">
+          <div class="breakdown-row">
+            <span>Course price</span>
+            <span style="text-decoration: line-through; color: var(--color-text-light);">₹1,499</span>
+          </div>
+          <div class="breakdown-row" style="color: #16a34a; font-weight: 600;">
+            <span>Limited-time discount</span>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span>- ₹800</span>
+              <span class="discount-pill">53% OFF</span>
+            </div>
+          </div>
+          <div class="breakdown-row total-row">
+            <span>Total payable</span>
+            <span style="font-size: 1.6rem; color: var(--color-text-main);">₹699</span>
+          </div>
+        </div>
+
+        <div class="savings-alert">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+          <span>You save ₹800 (53% off) today</span>
+        </div>
+
+        <div class="accepted-methods">
+          <div class="accepted-methods-title">Accepted Payment Methods</div>
+          <div class="payment-pills-row">
+            <span class="payment-pill">Razorpay</span>
+            <span class="payment-pill">UPI</span>
+            <span class="payment-pill">Visa</span>
+            <span class="payment-pill">Mastercard</span>
+            <span class="payment-pill">Net Banking</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Mobile Sticky Bottom Bar -->
+  <div class="mobile-sticky-bar">
+    <div>
+      <div class="mobile-bar-price-label">Total payable</div>
+      <div class="mobile-bar-price">₹699</div>
+    </div>
+    <a href="#enrollment-form" class="btn btn-primary" style="padding: 12px 20px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+      <span>Pay securely ₹699</span>
+      <span class="arrow-icon">→</span>
+    </a>
+  </div>
+
+</body>
+</html>
