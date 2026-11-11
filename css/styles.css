@@ -2686,6 +2686,8 @@ details[open] .coupon-form-inner {
   .nav-toggle-label {
     display: flex;
     margin-left: auto;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
   }
 
   .nav-toggle-label span {
