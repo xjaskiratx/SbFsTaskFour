@@ -2,6 +2,9 @@
 
 > **FlipStuck** is a modern, high-performance course learning platform built strictly with pure HTML and CSS—zero JavaScript dependencies. Features responsive Figma-accurate layouts, physics-based spring animations, a sleek mobile hamburger menu, interactive course catalog, curriculum accordions, and a distraction-free checkout experience.
 
+🌐 **Live Production Deployment**: [https://sbfstaskfour.vercel.app](https://sbfstaskfour.vercel.app)  
+📦 **GitHub Repository**: [https://github.com/xjaskiratx/SbFsTaskFour](https://github.com/xjaskiratx/SbFsTaskFour)
+
 ---
 
 ## ⚡ Highlights
